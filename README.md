@@ -31,7 +31,7 @@
   * `return this.messagesSource.asObservable();`
 9. Subscribe to socket.io to emit when a new message arrives
   *  `this.socketClient.on('chat message', msg => this.messagesSource.next(msg));`
-10.On ChatWindowComponent delete the timer and subscribe to the subject we just created.
+10. On ChatWindowComponent delete the timer and subscribe to the subject we just created.
   * `this.subscription = this.chatService.getMessages()
             .subscribe(message =>
                 this.messages.push(message)
